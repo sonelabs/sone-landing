@@ -1,18 +1,519 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mindful-gaze</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>MindfulGaze - Eye Tracking Innovation</title>
+    <meta name="description" content="Advanced eye tracking technology for enhanced human-computer interaction" />
+    <meta name="author" content="MindfulGaze" />
     <meta property="og:image" content="/og-image.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="eye-loader">
+        <div class="eye-outer">
+          <div class="eye-inner"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="public/lovable-uploads/1bd0ef97-3447-43c3-b33f-4ec4f1300a26.png" alt="MindfulGaze Logo" />
+          <span>MindfulGaze</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="cta-button">Contact</a></li>
+          </ul>
+          <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#applications">Applications</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="tag">Precision Eye Tracking</div>
+            <h1>The Future of <span>Vision Technology</span></h1>
+            <p>Advanced eye tracking solutions that transform how humans interact with technology. Discover unprecedented accuracy, speed, and intuitive interfaces.</p>
+            <div class="cta-group">
+              <a href="#demo" class="primary-button">Request Demo</a>
+              <a href="#technology" class="secondary-button">Explore Technology</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="eye-animation">
+              <div class="eye-tracker">
+                <div class="pupil"></div>
+                <div class="iris"></div>
+                <div class="scanning-line"></div>
+                <div class="tracking-point"></div>
+              </div>
+              <div class="data-points">
+                <span class="data-point"></span>
+                <span class="data-point"></span>
+                <span class="data-point"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-header">
+            <div class="tag">Core Capabilities</div>
+            <h2>Advanced Features</h2>
+            <p>Our technology combines precision hardware with sophisticated algorithms</p>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <line x1="12" y1="2" x2="12" y2="4"></line>
+                  <line x1="12" y1="20" x2="12" y2="22"></line>
+                  <line x1="2" y1="12" x2="4" y2="12"></line>
+                  <line x1="20" y1="12" x2="22" y2="12"></line>
+                </svg>
+              </div>
+              <h3>Ultra-Precise Tracking</h3>
+              <p>Sub-millimeter accuracy with advanced optical sensors that capture the slightest eye movement.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                  <line x1="6" y1="1" x2="6" y2="4"></line>
+                  <line x1="10" y1="1" x2="10" y2="4"></line>
+                  <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+              </div>
+              <h3>Low Latency Response</h3>
+              <p>Real-time processing with &lt;10ms latency for immediate and seamless interaction.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                  <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                  <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3>Multi-platform SDK</h3>
+              <p>Integrate easily with any device or software platform with our comprehensive development kit.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3>Privacy-First Design</h3>
+              <p>End-to-end encryption and on-device processing ensure user data never leaves their system.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technology" class="technology">
+        <div class="container">
+          <div class="tech-content">
+            <div class="section-header">
+              <div class="tag">How It Works</div>
+              <h2>Our Technology</h2>
+              <p>Patented algorithms deliver exceptional accuracy and reliability in any lighting condition</p>
+            </div>
+            <div class="tech-details">
+              <div class="tech-spec" data-aos="fade-right">
+                <div class="spec-value">99.8%</div>
+                <div class="spec-label">Tracking Accuracy</div>
+              </div>
+              <div class="tech-spec" data-aos="fade-right" data-aos-delay="100">
+                <div class="spec-value">250Hz</div>
+                <div class="spec-label">Sampling Rate</div>
+              </div>
+              <div class="tech-spec" data-aos="fade-right" data-aos-delay="200">
+                <div class="spec-value">&lt;10ms</div>
+                <div class="spec-label">Response Time</div>
+              </div>
+            </div>
+          </div>
+          <div class="tech-visual">
+            <div class="tech-diagram">
+              <div class="pulse-circles">
+                <div class="pulse-circle"></div>
+                <div class="pulse-circle"></div>
+                <div class="pulse-circle"></div>
+              </div>
+              <div class="diagram-lines">
+                <div class="tracking-line horizontal"></div>
+                <div class="tracking-line vertical"></div>
+                <div class="data-point" style="top: 30%; left: 40%"></div>
+                <div class="data-point" style="top: 50%; left: 60%"></div>
+                <div class="data-point" style="top: 70%; left: 30%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="applications" class="applications">
+        <div class="container">
+          <div class="section-header">
+            <div class="tag">Versatile Use Cases</div>
+            <h2>Applications</h2>
+            <p>Our technology is powering innovations across multiple industries</p>
+          </div>
+          <div class="application-carousel">
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <div class="application-card">
+                  <div class="app-icon medical"></div>
+                  <h3>Medical Diagnostics</h3>
+                  <p>Early detection of neurological conditions through precise eye movement analysis.</p>
+                </div>
+                <div class="application-card">
+                  <div class="app-icon gaming"></div>
+                  <h3>Gaming & VR</h3>
+                  <p>Immersive control systems that respond to natural eye movements.</p>
+                </div>
+                <div class="application-card">
+                  <div class="app-icon automotive"></div>
+                  <h3>Automotive Safety</h3>
+                  <p>Driver monitoring systems that detect fatigue and distraction.</p>
+                </div>
+                <div class="application-card">
+                  <div class="app-icon research"></div>
+                  <h3>Research</h3>
+                  <p>Advanced tools for cognitive and behavioral studies.</p>
+                </div>
+                <div class="application-card">
+                  <div class="app-icon accessibility"></div>
+                  <h3>Accessibility</h3>
+                  <p>Enabling hands-free computer control for individuals with mobility limitations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-nav">
+              <button class="carousel-prev">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <button class="carousel-next">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="section-header">
+              <div class="tag">Our Story</div>
+              <h2>About MindfulGaze</h2>
+              <p>Founded by experts in computer vision and neuroscience</p>
+            </div>
+            <div class="about-text">
+              <p>
+                MindfulGaze began with a simple vision: to create technology that understands human intention through the most natural interface—our eyes.
+              </p>
+              <p>
+                Our team combines decades of experience in computer vision, machine learning, and human-computer interaction to develop solutions that are both technologically advanced and intuitively human.
+              </p>
+              <div class="stats">
+                <div class="stat-item">
+                  <div class="stat-value">2018</div>
+                  <div class="stat-label">Founded</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value">18</div>
+                  <div class="stat-label">Patents</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value">32</div>
+                  <div class="stat-label">Team Members</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-container">
+              <div class="image-overlay"></div>
+              <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Team at work" class="lazy-load" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" class="demo">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="tag">Experience the Difference</div>
+            <h2>Request a Demo</h2>
+            <p>See our technology in action with a personalized demonstration</p>
+          </div>
+          <div class="demo-form-container">
+            <form id="demoForm" class="demo-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your company" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+                </div>
+              </div>
+              <div class="form-group full-width">
+                <label for="interest">Area of Interest</label>
+                <select id="interest" name="interest" required>
+                  <option value="" disabled selected>Select your primary interest</option>
+                  <option value="medical">Medical Applications</option>
+                  <option value="gaming">Gaming & VR</option>
+                  <option value="automotive">Automotive</option>
+                  <option value="research">Research</option>
+                  <option value="accessibility">Accessibility</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project or requirements" rows="4"></textarea>
+              </div>
+              <div class="form-group full-width">
+                <button type="submit" class="submit-button">
+                  <span>Submit Request</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div id="formSuccess" class="form-success">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <p>Thank you! Your demo request has been received.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-content">
+            <div class="section-header">
+              <div class="tag">Get In Touch</div>
+              <h2>Contact Us</h2>
+              <p>Have questions? Our team is here to help</p>
+            </div>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Location</h3>
+                  <p>100 Innovation Drive<br />San Francisco, CA 94158</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:info@mindfulgaze.com">info@mindfulgaze.com</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Phone</h3>
+                  <p><a href="tel:+14155552671">+1 (415) 555-2671</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="map-container">
+            <div class="map-placeholder">
+              <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1" fill="none">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Interactive Map</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="public/lovable-uploads/1bd0ef97-3447-43c3-b33f-4ec4f1300a26.png" alt="MindfulGaze Logo" />
+            <span>MindfulGaze</span>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-column">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">API</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-column">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Compliance</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>© 2023 MindfulGaze, Inc. All rights reserved.</p>
+          </div>
+          <div class="footer-extra">
+            <select id="language">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="root"></div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
